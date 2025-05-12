@@ -6,6 +6,8 @@ This project implements an automated file validation workflow using **AWS S3**, 
 
 When a user uploads a file to an S3 bucket, an event is triggered. The system uses an AWS Lambda function to validate the uploaded file based on predefined rules. The validation result is then sent to either a success or failure queue. A Spring Boot application listens to the **Failure Queue**, and sends an email alert to the user using AWS SNS.
 
+![System Architecture](S3ObjectValidation/src/main/java/com/s3/validation/assets/S3%20Obejct%20Validation%20Design.png)
+
 ---
 
 ## ✅ Validation Rules
